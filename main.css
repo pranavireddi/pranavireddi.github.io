@@ -131,8 +131,8 @@ canvas {
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width: calc(var(--square) * 6 + var(--onepx));
-    height: calc(var(--square) * 5 + var(--onepx));
+    width: calc(var(--square) * 18 + var(--onepx));
+    height: calc(var(--square) * 10 + var(--onepx));
     margin-top:calc(var(--square) * 1);
     margin-left:calc(var(--square) * 1);
     box-sizing:border-box;
