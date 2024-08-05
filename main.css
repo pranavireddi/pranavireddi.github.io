@@ -31,6 +31,7 @@
     --homefontsize: 23px;
     --fontsize: 15pt;
     --titlesize: 15px;
+    --titlesizemain: 20px;
     --margin:25px;
     --tbmargin: 10px 25px;
     --footerpadding: 5px 20px 24px 20px;
@@ -131,7 +132,7 @@ canvas {
     border-style:solid;
     border-color:var(--line);
     background:var(--background);
-    width: calc(var(--square) * 18 + var(--onepx));
+    width: calc(var(--square) * 19 + var(--onepx));
     height: calc(var(--square) * 9 + var(--onepx));
     margin-top:calc(var(--square) * 1);
     margin-left:calc(var(--square) * 1);
@@ -199,22 +200,6 @@ a {
 }
 
 
-.languages{
-    height:var(--twentypx);
-    padding:0;
-    margin:0;
-    font-family:Lato;
-    margin:0;
-    font-weight:300;
-    letter-spacing:var(--onepx);
-    text-decoration:none;
-    font-size:var(--titlesize);}
-    .languages a{
-        text-decoration:none;
-    }.languages a:hover{
-    color:var(--highlight);
-}
-
 .body{
     padding:var(--tbmargin);
     margin:0;
@@ -260,7 +245,7 @@ h1{
     font-weight:700;
     letter-spacing:var(--onepx);
     text-decoration:none;
-    font-size:var(--titlesize);}
+    font-size:var(--titlesizemain);}
     .title:hover{
     color:var(--highlight);
 }
@@ -351,14 +336,25 @@ ul.body{
     z-index: 100;
 }
 
+.header1, .menu{
+    padding-left:20px;
+    padding-right:24px;
+    padding-bottom:1em;
+    position:sticky;
+    top:57px;
+    background-color:var(--background);
+    z-index: 100;
+    text-decoration: underline wavy rgb(102,178,178);
+}
+
 .menu {
-    padding:0;
+    padding: 10px;
     margin:0 0 0 5px;
     font-family:Lato;
     font-size:var(--titlesize);
     list-style-type:none;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     background-color:inherit;}
     .menu>a:hover{
     background-color:inherit;
